@@ -1,7 +1,9 @@
+//  TODO: fix schema for storage settings, so they don't need to be accessed with perSiteSettings.perSiteSettings
+
 let refreshers = {}
 
 // Clicked extension icon
-chrome.browserAction.onClicked.addListener(tab => {
+chrome.action.onClicked.addListener(tab => {
   createOrDeleteRefresher(String(tab.id))
 })
 
@@ -44,7 +46,9 @@ function createOrDeleteRefresher(strId) {
     let minutes = settings.minutes
     let seconds = settings.seconds
       
+    // console.log(`perSiteSettings: ${JSON.stringify(perSiteSettings)}`)
     if (perSiteSettings != undefined) {
+      // console.log(`checking for ${tabUrl} in settings`)
       // check if exact tabUrl in settings first
       if (tabUrl in perSiteSettings.perSiteSettings) {
         let siteSettings = perSiteSettings.perSiteSettings[tabUrl]
@@ -98,7 +102,7 @@ function createRefresher(refreshers, strId, ms) {
       sec = String(parseInt(refreshers[strId].tick--))
       var mmss = getMMSS(sec * 1000)
 
-      chrome.browserAction.setBadgeText({text: mmss, tabId: Number(strId)})
+      chrome.action.setBadgeText({text: mmss, tabId: Number(strId)})
     } else {
       // Tab is ready to refresh assign tick to the interval and refresh
       refreshers[strId].tick = refreshers[strId].interval
@@ -116,7 +120,7 @@ function createRefresher(refreshers, strId, ms) {
 
 function deleteRefresher(refreshers, strId) {
   // Remove from this tab's data from refreshers
-  chrome.browserAction.setBadgeText({text: "", tabId: parseInt(strId)})
+  chrome.action.setBadgeText({text: "", tabId: parseInt(strId)})
   // Stop refresh loop
   clearInterval(refreshers[strId].refresh)
   delete refreshers[strId]

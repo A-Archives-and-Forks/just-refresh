@@ -1,134 +1,134 @@
 * {
-    font-family: "Open Sans", sans-serif;  
-    margin: auto;
-    text-align: center;
+  font-family: "Open Sans", sans-serif;  
+  margin: auto;
+  text-align: center;
 }
 
 header {
-    color: #0ad8c4;
-    font-size: 300%;
-    width: 18%;
-    padding: 10px;
+  color: #0ad8c4;
+  font-size: 300%;
+  width: 18%;
+  padding: 10px;
 }
 
 body {
-    background-color:#212121;
-    position: relative;
+  background-color:#212121;
+  position: relative;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    padding-top: 5%;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  text-align: center;
 }
 
 .per-site {
-    color: #0ad8c4;
-    font-size: 250%;
-    padding: 10px;
+  color: #0ad8c4;
+  font-size: 250%;
+  padding: 10px;
 }
 
 .input-desc {
-    color: #FFFFFF;
-    font-size: 18px;
-    display: inline;
+  color: #FFFFFF;
+  font-size: 18px;
+  display: inline;
 }
 
 .website {
-    width: 175px;
+  width: 175px;
 
-    /* Rounded corners */
-    border-radius: 5px;
-    border: 0;
+  /* Rounded corners */
+  border-radius: 5px;
+  border: 0;
 }
 
 .per-site-field {
-    width: 50px;
+  width: 50px;
 
-    /* Rounded corners */
-    border-radius: 5px;
-    border: 0;
+  /* Rounded corners */
+  border-radius: 5px;
+  border: 0;
 }
 
 input {
-    width: 50px;
-    padding: 8px;
+  width: 50px;
+  padding: 8px;
 
-    /* Rounded corners */
-    border-radius: 5px;
-    border: 0;
+  /* Rounded corners */
+  border-radius: 5px;
+  border: 0;
 }
 
 /* This is literally just for a single ':'; I know it's kinda ridiculous */
 .colon {
-    color: #FFFFFF;
-    display: inline;
-    font-size: 20px;
-    /* padding: 2px; */
-    /* margin-right: .5px; */
+  color: #FFFFFF;
+  display: inline;
+  font-size: 20px;
+  /* padding: 2px; */
+  /* margin-right: .5px; */
 }
 
 /* Submit button */
 input[type=submit] {
-    cursor: pointer;
+  cursor: pointer;
 
-    /* Rounded corners */
-    border-radius: 5px;
-    border: 0;
+  /* Rounded corners */
+  border-radius: 5px;
+  border: 0;
 
-    /* Keep it small */
-    width: 80px;
-    height: 35px;
+  /* Keep it small */
+  width: 80px;
+  height: 35px;
 
-    /* Match icon background */
-    background: #0ad8c4;
+  /* Match icon background */
+  background: #0ad8c4;
 }
 
 .add {
-    cursor: pointer;
+  cursor: pointer;
 
-    /* Rounded corners */
-    border-radius: 5px;
-    border: 0;
+  /* Rounded corners */
+  border-radius: 5px;
+  border: 0;
 
-    width: 1%;
+  width: 1%;
 
-    /* Match icon background */
-    background: #0ad8c4;
+  /* Match icon background */
+  background: #0ad8c4;
 }
 
 .remove {
-    float: left;
-    cursor: pointer;
+  float: left;
+  cursor: pointer;
 
-    /* Rounded corners */
-    border-radius: 5px;
-    border: 0;
+  /* Rounded corners */
+  border-radius: 5px;
+  border: 0;
 
-    width: 13%;
+  width: 13%;
 
-    /* Match icon background */
-    background: #0ad8c4;
+  /* Match icon background */
+  background: #0ad8c4;
 }
 
 .tableContainer {
-    margin-left: 5%;
+  margin-left: 5%;
 }
 
 .support {
-    color: hotpink;
-    font-size: 18px;
+  color: hotpink;
+  font-size: 18px;
 }
 
 a:hover {
-    color: #0ad8c4;
+  color: #0ad8c4;
 }
 
 a:visited {
-    color: #66ccff;
+  color: #66ccff;
 }
 
 a:active {
-    color: #ff9933;
+  color: #ff9933;
 }

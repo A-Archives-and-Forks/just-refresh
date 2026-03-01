@@ -1,3 +1,7 @@
+// TODO: 
+//  1. show up/down arrows on the time fields, handle 0 padding better?
+//  2. ignore http(s)://www in per site settings? 
+
 let submit = document.getElementById('submit')
 let addNewButton = document.getElementById('addNewSite')
 let minuteField = document.getElementById('minuteField')
@@ -118,8 +122,6 @@ function createRow(rowIndex) {
 
   currentCell = currentRow.insertCell(-1)
   currentCell.appendChild(secondField)
-
-
 
   currentCell = currentRow.insertCell(-1)
   currentCell.appendChild(removeButton)
